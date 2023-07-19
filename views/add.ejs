@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <body>
+      <div class="main-container">
+        <div class="topbar">
+          <div class="logo">
+            <a href="/">
+              <img
+                src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png"
+                alt="Logo"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="form">
+          <div class="title">Add Your Playlist</div>
+          <form action="/addSong" method="POST">
+            <div class="input-container ic2">
+              <label for="title">Title</label>
+              <input
+                name="title"
+                class="input"
+                type="text"
+                placeholder="Title"
+              />
+            </div>
+            <div class="input-container ic2">
+              <label for="artist">Artist</label>
+              <input
+                name="artist"
+                class="input"
+                type="text"
+                placeholder="Artist"
+              />
+            </div>
+            <div class="input-container ic2">
+              <label for="url">Song Url</label>
+              <input
+                name="url"
+                class="input"
+                type="text"
+                placeholder="Song Url"
+              />
+            </div>
+            <div class="input-container ic2">
+              <label for="img"> Image Url</label>
+              <input
+                name="img"
+                class="input"
+                type="text"
+                placeholder="Image Url"
+              />
+            </div>
+            <button type="submit" class="submit">submit</button>
+          </form>
+        </div>
+      </div>
+      <script src="https://kit.fontawesome.com/23cecef777.js"></script>
+    </body>
+  </body>
+</html>
