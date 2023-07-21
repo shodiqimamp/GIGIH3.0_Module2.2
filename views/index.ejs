@@ -24,6 +24,12 @@
               <span>Create Playlist</span>
             </a>
           </div>
+          <div class="button">
+            <a href="/mostPlayed">
+              <span class="fa fas fa-play"></span>
+              <span>Most Played</span>
+            </a>
+          </div>
         </div>
 
         <div class="spotify-playlists">
@@ -34,13 +40,13 @@
             <div class="item">
               <img src=" <%= playlist.img %> " />
               <div class="play">
-                <a href="/play/<%= playlist.title %>">
+                <a href="/song/<%= playlist.title %>">
                   <span class="fa fa-play"></span>
                 </a>
               </div>
               <h4><%= playlist.title %></h4>
               <p><%= playlist.artist %></p>
-              <!-- <p>Played: <%= playlist.total_played %> Times</p> -->
+              <p>Played: <%= playlist.total_played %> Times</p>
             </div>
             <% }) %>
           </div>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <body>
+      <div class="main-container">
+        <div class="topbar">
+          <div class="logo">
+            <a href="/">
+              <img
+                src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png"
+                alt="Logo"
+              />
+            </a>
+          </div>
+          <div class="button">
+            <a href="/add">
+              <span class="fa fas fa-plus-square"></span>
+              <span>Create Playlist</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="player">
+          <div class="player-track">
+            <div class="artist-name"><%= title %></div>
+            <div class="music-name"><%= artist %></div>
+            <div class="progress-bar">
+              <div class="fillBar"></div>
+            </div>
+            <div class="time"></div>
+            <div class="music-name">Played <%=total_played%> Times</div>
+          </div>
+          <div class="circle">
+            <div class="circ"></div>
+            <div id="thumbnail">
+              <img class="thumbnail" src=" <%= img %> " />
+            </div>
+          </div>
+          <div class="player-control">
+            <i id="prev" class="prev-btn fas fa-backward"></i>
+            <i id="play" class="play-btn fas fa-play"
+              ><a href="/song/<%= title %>"></a>
+            </i>
+            <i id="next" class="next-btn fas fa-forward"></i>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://kit.fontawesome.com/23cecef777.js"></script>
+    </body>
+  </body>
+</html>
